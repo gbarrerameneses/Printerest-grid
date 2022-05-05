@@ -4,6 +4,12 @@
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 /* N A V I G A T I O N*/
+header {
+    position: sticky;
+    box-sizing: border-box;
+    top: 0;
+    z-index: 1;
+}
 .navigation {
     background-color: #fff;
     width: 100%;
@@ -14,7 +20,6 @@
     z-index: 1;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 .navigation > div {
     padding: 0 7px;
@@ -22,10 +27,10 @@
 a {
     color: #000;
     list-style: none;
-    padding: 15px 16px;
+    padding: 15px;
     text-decoration: none;
     font-size: var(--g-text-font-size-3);
-    margin: 0 5px;
+    /*margin: 0 5px;*/
     border-radius: 70px;
     font-weight: bold;
 }
@@ -197,7 +202,6 @@ width: 30px;*/
 }
 
 .hgInput {
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -245,11 +249,14 @@ input.search {
 
 }  
  @media (max-width: 767px) {
+.navigation {
+    justify-content: space-around;
+}
 .grid-container {
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 49% 50%;
 }
 .gridCentered {
-    width: 375px;
+    width: auto;
 }
 .cButtons {
     width: 90%;
