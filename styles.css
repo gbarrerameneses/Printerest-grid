@@ -17,7 +17,7 @@
     justify-content: center;
 }
 .navigation > div {
-    padding: 0 8px;
+    padding: 0 7px;
 }
 a {
     color: #000;
@@ -95,7 +95,7 @@ a {
     justify-content: center;
   
     border-radius: 16px !important;
-    margin: 10px;
+    margin: 5px;
     /*border-radius: 4px;*/
     transition: transform 0.3s ease-in-out;
   
@@ -249,7 +249,7 @@ input.search {
     grid-template-columns: 50% 50%;
 }
 .gridCentered {
-    width: 415px;
+    width: 375px;
 }
 .cButtons {
     width: 90%;
